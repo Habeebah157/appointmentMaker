@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <ScheduleForm/>
-      <p> Hello World</p>
+      
     </div>
   );
 }

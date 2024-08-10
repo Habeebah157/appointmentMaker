@@ -2,26 +2,25 @@ import DateTimePicker from 'react-datetime-picker'
 import './ScheduleForm.css'
 function ScheduleForm(){
     return(
-    <div>
+    <div className='scheduleForm_form'>
         <form className='form'>
-            <label>
-                Name:
+            <p className='scheduleForm_header'><b>Make an appointment: </b></p>
+            <label className='scheduleForm_item'>
+                <p className='scheduleForm__item_title'>Name:</p>
                 <input type="text" name="name"/>
             </label>
-            <br></br>
-            
-            <label>
-                Time:
+            <label className='scheduleForm_item'>
+                <p className='scheduleForm__item_title'>Time:</p>
                 <input aria-label="Date and time" type="datetime-local" />
             </label>
-            <br></br>
-            <label>
-                Purpose of meeting
+        
+            <label className='scheduleForm_item'>
+                <p className='scheduleForm__item_title'>Purpose of meeting: </p>
                 <input type="text" name='purpose'/>
             </label>
-            <br></br>
-            <input type="submit" />
-            <br></br>
+      
+            <input className='scheduleForm_item'type="submit" />
+      
         </form>
     </div>
     )
